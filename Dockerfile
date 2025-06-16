@@ -1,0 +1,8 @@
+FROM mariadb:10.11
+
+ENV MYSQL_ROOT_PASSWORD=root_password
+ENV MYSQL_DATABASE=TelechatDevelopment
+ENV MYSQL_USER=khayyamalfath
+ENV MYSQL_PASSWORD=password
+
+EXPOSE 3306

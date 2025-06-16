@@ -1,0 +1,18 @@
+services:
+  - type: private
+    name: mariadb
+    env: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: MYSQL_ROOT_PASSWORD
+        value: root_password
+      - key: MYSQL_DATABASE
+        value: TelechatDevelopment
+      - key: MYSQL_USER
+        value: khayyamalfath
+      - key: MYSQL_PASSWORD
+        value: password
+    ports:
+      - port: 3306
